@@ -136,12 +136,16 @@
 
 
 /* Flight Section start*/
-
-
-
 ul {
 	list-style: none;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
 	margin: 0px;
+}
+.list-el{
+    width: 550px;
 }
 
 p {
@@ -285,11 +289,14 @@ p {
 	background-size: cover;
 	background-position: center center;
 	text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .banner .left-side {
 	text-align: left;
-	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	margin-left: -100vh;
 	padding-left: 100vh;
@@ -406,6 +413,7 @@ p {
 
 @media (max-width: 991px) {
 
+
 	.banner .left-side {
 		text-align: center;
 		overflow: hidden;
@@ -416,12 +424,12 @@ p {
 		padding-left: 50vh;
 	}
 
-    .banner .social-links {
-        list-style: none;
-        margin-top: 0px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+	.banner .social-links {
+	  list-style: none;
+	  margin-top: 0px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	}
 
 	.banner .page-direction-button {
 		margin-top: 50px;
